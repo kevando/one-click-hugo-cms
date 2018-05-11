@@ -1,6 +1,6 @@
 ---
 title: Zharki News
-subtitle: Support sustainable farming while enjoying a cup
+subtitle: From our corner of the world to yours
 image: /img/home-jumbotron.jpg
 blurb:
   heading: Why Kaldi?
