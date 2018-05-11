@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="134px" height="36px" viewBox="0 0 134 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1007,507.295095 L1007,529.675292 C1006.65935,530.206017 1005.85814,530.471379 1004.59635,530.471379 C1003.33457,530.471379 1002.37733,530.206017 1001.72464,529.675292 L975.91438,512.058591 C974.976037,511.399818 973.86933,511.097857 972.594261,511.152709 C971.319191,511.207561 970.573919,511.509521 970.358444,512.058591 L970.358444,529.785027 C970.203214,530.225461 969.492088,530.502639 968.225069,530.616562 C966.958049,530.730485 965.974356,530.453307 965.273988,529.785027 L939.190875,512.004141 C938.391321,511.291566 937.254287,510.964599 935.779771,511.023239 C934.305256,511.081879 933.640828,511.465582 933.786488,512.174348 L933.786488,528.993181 C933.817463,529.400786 933.61463,529.742825 933.17799,530.019297 C932.74135,530.29577 932.165998,530.446464 931.451934,530.471379 L888.638246,530.471379 C887.078607,530.471379 886.109347,530.242595 885.730467,529.785027 C885.351586,529.327459 885.922271,528.826519 887.442521,528.282207 L928.257546,512.004141 C929.372592,511.53068 929.674438,511.082782 929.163084,510.660445 C928.651729,510.238109 927.622889,510.041204 926.076564,510.069732 L885,510.069732" id="path-1"></path>
+        <filter x="-10.2%" y="-53.5%" width="120.5%" height="207.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="5.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="5.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0146654861   0 0 0 0 0.219121657   0 0 0 0 0.328922194  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-879.000000, -501.000000)">
+        <g id="Path-5">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use stroke="#00A2F9" stroke-width="4" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
