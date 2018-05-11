@@ -1,7 +1,7 @@
 ---
 title: Zharki News
 subtitle: From our corner of the world to yours
-image: /img/home-jumbotron.jpg
+image: /img/zharky-image.jpg
 blurb:
   heading: Why Kaldi?
   text: >-
