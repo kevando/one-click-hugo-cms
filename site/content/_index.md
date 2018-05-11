@@ -3,12 +3,10 @@ title: Zharki News
 subtitle: From our corner of the world to yours
 image: /img/zharky-image.jpg
 blurb:
-  heading: Why Kaldi?
+  heading: What is ZNN?
   text: >-
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Your 1 stop source for all things PUBG. Videos, streamers, news,
+    competitions, and much more. All from the #1 vacation destination, Zharki!
 intro:
   heading: What we offer
   text: >-
