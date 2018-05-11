@@ -36,6 +36,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Tags", name: "tags", required: false, widget: "list"}
       - {label: "Categories", name: "categories", required: false, widget: "list"}
 
+
   # -------------------------------------------------------------------------
   - name: "pages"
     label: "Pages"

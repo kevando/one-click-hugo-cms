@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="39px" viewBox="0 0 92 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-4.6%" y="-12.9%" width="109.2%" height="125.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="1" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-684.000000, -689.000000)">
+        <g id="Group-2" transform="translate(686.000000, 693.000000)">
+            <polyline id="bg" stroke="#1481BA" stroke-width="6" points="86.5401597 0 86.5401597 28.0614997 60.9180214 3.64098523 60.9180214 28.0614997 32.8454554 3.64098523 32.747325 30.9069155 5.47474392 30.9069155 26.2717733 0.983686734 -1.13686838e-13 0.983686734"></polyline>
+            <polyline id="blur" stroke="#72BCE3" stroke-width="2" filter="url(#filter-1)" points="86.5401597 0 86.5401597 28.0614997 60.9180214 3.64098523 60.9180214 28.0614997 32.8454554 3.64098523 32.747325 30.9069155 5.47474392 30.9069155 26.2717733 0.983686734 -1.13686838e-13 0.983686734"></polyline>
+        </g>
+    </g>
+</svg>
