@@ -52,29 +52,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Bio", name: "bio", widget: "markdown"}
       - {label: "Notes", name: "notes", widget: "text"}
 
-      # allows you to reference items from another collection
-      - label: "Related Posts"
-        name: "relatedposts"
-        widget: "relation"
-        collection: "news"
-        searchFields: ["title", "description"]
-        valueField: "title" # probly want to use slug
-        displayFields: ["title", "description"]
-
-      - label: "Tags"
-        name: "tags"
-        widget: "list"
-        allow_add: false
-        default: ["news","funny","bad"]
-      - label: "Gallery"
-        name: "galleryImages"
-        widget: "list"
-        field:
-          - {label: Image, name: image, widget: image}
-          
-      - {label: "Categories", name: "categories", required: false, widget: "list"}
-
-
 
   # -------------------------------------------------------------------------
   - name: "pages"
