@@ -36,6 +36,73 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Tags", name: "tags", required: false, widget: "list"}
       - {label: "Categories", name: "categories", required: false, widget: "list"}
 
+  # -------------------------------------------------------------------------
+  #   Streamer
+  # -------------------------------------------------------------------------
+  - name: "streamer"
+    label: "Streamers"
+    folder: "site/content/streamer"
+    create: true
+    # slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Username", name: "username", widget: "string"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Bio", name: "bio", widget: "markdown"}
+      - {label: "Notes", name: "notes", widget: "text"}
+
+      # allows you to reference items from another collection
+      - label: "Related Posts"
+        name: "relatedposts"
+        widget: "relation"
+        collection: "news"
+        searchFields: ["title", "description"]
+        valueField: "title" # probly want to use slug
+        displayFields: ["title", "description"]
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        allow_add: false
+        default: ["news","funny","bad"]
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        field:
+          - {label: Image, name: image, widget: image}
+      - {label: "Categories", name: "categories", required: false, widget: "list"}
+
+      # Group some fields togeter, maybe just tmp
+      - label: "Profile"
+        name: "profile"
+        widget: "object"
+        fields:
+          - {label: "Public", name: "public", widget: "boolean", default: true}
+          - {label: "Name", name: "name", widget: "string"}
+          - label: "Birthdate"
+            name: "birthdate"
+            widget: "date"
+            default: ""
+            format: "MM/DD/YYYY"
+          - label: "Address"
+            name: "address"
+            widget: "object"
+            fields:
+              - {label: "Street Address", name: "street", widget: "string"}
+              - {label: "City", name: "city", widget: "string"}
+              - {label: "Postal Code", name: "post-code", widget: "string"}
+      # selection form
+      - label: "City"
+        name: "airport-code"
+        widget: "select"
+        options:
+          - { label: "Chicago", value: "ORD" }
+          - { label: "Paris", value: "CDG" }
+          - { label: "Tokyo", value: "HND" }
+
+
+
 
   # -------------------------------------------------------------------------
   - name: "pages"
@@ -90,9 +157,11 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-      - file: "site/content/values/_index.md"
-        label: "Values Page"
-        name: "values"
+
+      # Create a custom page for displaying streamers
+      - file: "site/content/streamers/_index.md"
+        label: "Steamers Page"
+        name: "streamers"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}

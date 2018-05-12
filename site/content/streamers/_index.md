@@ -1,5 +1,5 @@
 ---
-title: "Values"
+title: "Da Streamers"
 image: /img/about-jumbotron.jpg
 values:
   - heading: "Shade-grown coffee"
