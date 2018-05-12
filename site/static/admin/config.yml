@@ -41,7 +41,7 @@ collections: # A list of collections the CMS should be able to edit
   # -------------------------------------------------------------------------
   - name: "streamer"
     label: "Streamers"
-    folder: "site/content/streamer"
+    folder: "site/content/streamers"
     create: true
     # slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields:
@@ -111,10 +111,11 @@ collections: # A list of collections the CMS should be able to edit
       # Create a custom page for displaying streamers
       - file: "site/content/streamers/_index.md"
         label: "Steamers Page"
-        name: "streamers"
+        name: "streamer"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
+
           # allows you to reference items from another collection
           - label: "Featured Streamer"
             name: "featuredstreamer"
@@ -123,10 +124,11 @@ collections: # A list of collections the CMS should be able to edit
             searchFields: ["name", "bio"]
             valueField: "name"
             displayFields: ["name", "bio"]
-          - label: Values
-            name: values
-            widget: list
-            fields:
-              - {label: Heading, name: heading, widget: string}
-              - {label: Text, name: text, widget: text}
-              - {label: Image, name: imageUrl, widget: image}
+          - {label: "Description", name: "description", widget: "text"}
+          # - label: Values
+          #   name: values
+          #   widget: list
+          #   fields:
+          #     - {label: Heading, name: heading, widget: string}
+          #     - {label: Text, name: text, widget: text}
+          #     - {label: Image, name: imageUrl, widget: image}

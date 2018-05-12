@@ -4,13 +4,20 @@
 
 <div class="mw7 center ph3 pt4">
 
-  {{ range $index, $element := .Params.values }}
-    {{ if modBool $index 2 }}
-      {{ partial "media-block" $element }}
-    {{ else }}
-      {{ partial "media-block-reverse" $element }}
-    {{ end }}
+
+  {{ range $index, $element := .Data.streamer }}
+    <p>dude</p>
   {{ end }}
+
+  {{ range first 2 (where .Data.Pages "Type" "streamers") }}
+    <p> Streamer = {{ .Title }}</p>
+  {{ end }}
+
+
+  {{ range (.Paginator 4).Pages.ByPublishDate }}
+  <p> Title = {{ .Title }}</p>
+  {{ end }}
+
 
 </div>
 
