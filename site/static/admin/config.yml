@@ -119,6 +119,7 @@ collections: # A list of collections the CMS should be able to edit
           # allows you to reference items from another collection
           - label: "Featured Streamer"
             name: "featuredstreamer"
+            required: false
             widget: "relation"
             collection: "streamer"
             searchFields: ["name", "bio"]
