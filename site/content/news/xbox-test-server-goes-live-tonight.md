@@ -6,6 +6,7 @@ image: /img/screen shot 2018-05-11 at 12.25.54 pm.png
 tags:
   - xbox
   - test server
+  - featured
 categories:
   - xBox
   - News
