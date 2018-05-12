@@ -5,19 +5,36 @@
 <div class="mw7 center ph3 pt4">
 
 
-  {{ range $index, $element := .Data.streamer }}
-    <p>dude</p>
+
+
+      {{ range $index, $element := .Data.Pages }}
+
+        {{ if modBool $index 2 }}
+          {{ partial "media-block" $element.Params }}
+        {{ else }}
+          {{ partial "media-block-reverse" $element.Params }}
+
+      {{ end }}
+
+      {{ end }}
+
+
+
+  <!-- debug bs
+
+  {{ range .Data.Pages }}
+      {{/* The context, ".", is now each one of the pages as it goes through the loop */}}
+      <p>{{ printf "%#v" . }}</p>
   {{ end }}
 
-  {{ range first 2 (where .Data.Pages "Type" "streamers") }}
+  {{ range first 4 (where .Data.Pages "Type" "streamers") }}
     <p> Streamer = {{ .Title }}</p>
   {{ end }}
 
 
   {{ range (.Paginator 4).Pages.ByPublishDate }}
-  <p> Title = {{ .Title }}</p>
-  {{ end }}
-
+    <p>{{ .Title }}</p>
+  {{ end }} -->
 
 </div>
 
