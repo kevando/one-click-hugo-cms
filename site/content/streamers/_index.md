@@ -1,7 +1,6 @@
 ---
-title: Da Streamers
+title: Streamers
 image: /img/zharky-image.jpg
-featuredstreamer: ''
+featuredstreamer: 'shroud'
 description: asdf
 ---
-
