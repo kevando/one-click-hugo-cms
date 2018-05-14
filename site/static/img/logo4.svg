@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="281px" height="82px" viewBox="0 0 281 82" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>logo4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="GillSans-Bold, Gill Sans" font-size="72" font-weight="bold" fill="#FF2222">
+            <tspan x="49.6113281" y="66">ZNN</tspan>
+        </text>
+        <filter x="-2.4%" y="-5.5%" width="106.0%" height="113.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.536769701 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-opacity="0.644276495">
+        <g id="logo4" stroke="#000000" stroke-width="4">
+            <g id="ZNN">
+                <use fill="#FF2222" fill-opacity="1" filter="url(#filter-2)" xlink:href="#text-1"></use>
+                <use fill="#FF2222" fill-opacity="1" xlink:href="#text-1"></use>
+                <use xlink:href="#text-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

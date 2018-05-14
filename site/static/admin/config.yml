@@ -19,6 +19,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Category", name: "category", widget: "string"}
+      - {label: "Sort Order", name: "sort_order", widget: "number", default: 999, valueType: "int"}
 
   # -------------------------------------------------------------------------
   #   Streamer

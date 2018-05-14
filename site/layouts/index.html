@@ -7,17 +7,16 @@
 
 				<div class="ph0-ns w-75-ns bg-grey-2 ma0">
 
-
-              <!-- TOP STORY -->
-                {{ range $index, $element := (where .Data.Pages "Type" "posts") }}
-                  {{ if eq $index 0 }}
-                    {{ .Render  "li-1" }}
-                  {{ end }}
+								{{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Title" "asc") }}
+									{{ if eq $index 0 }}
+										{{ .Render  "li-1" }}
+									{{ end }}
                 {{ end }}
 
 					<div class="ph0-ns w-100-ns flex bg-grey-2 mt2">
 
-            {{ range $index, $element := (where .Data.Pages "Type" "posts") }}
+
+            {{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Title" "asc") }}
               {{ if eq $index 1 }}
                 {{ .Render  "li-2" }}
               {{ end }}
@@ -30,7 +29,7 @@
 
 					<div class="ph0-ns w-100-ns flex bg-grey-2 mt2">
 
-            {{ range $index, $element := (where .Data.Pages "Type" "posts") }}
+            {{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Title" "asc") }}
               {{ if eq $index 0 }}
                 {{ .Render  "li-3" }}
               {{ end }}
