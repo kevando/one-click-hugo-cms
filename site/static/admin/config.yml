@@ -11,6 +11,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Posts" # Used in the UI, ie.: "New Post"
     folder: "site/content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -45,14 +46,6 @@ collections: # A list of collections the CMS should be able to edit
         label: "Home Page"
         name: "home"
         fields:
-          - label: "Featured Post"
-            name: "featured_post"
-            widget: "relation"
-            collection: "esports"
-            searchFields: ["title"]
-            valueField: "title"
-            displayFields: ["title"]
-
           - {label: Title, name: title, widget: string}
 
       - file: "site/content/contact/_index.md"
