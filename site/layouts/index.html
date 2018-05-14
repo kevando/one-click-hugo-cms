@@ -31,10 +31,13 @@
 					<div class="ph0-ns w-100-ns flex bg-grey-2 mt2">
 
             {{ range $index, $element := (where .Data.Pages "Type" "posts") }}
-              {{ if eq $index 3 }}
+              {{ if eq $index 0 }}
                 {{ .Render  "li-3" }}
               {{ end }}
             {{ end }}
+
+
+
 
 					</div>
 

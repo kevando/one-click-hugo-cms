@@ -1,12 +1,12 @@
 
 	<!-- TOP STORY -->
-	<div class="ph1-ns pt6 w-100-ns bg-grey-4 ma0" style="background:linear-gradient(0deg,rgba(0,0,0,0.6),rgba(0,0,0,0.2)),url(/img/zharky-image.jpg);background-size:cover">
+	<div class="ph1-ns pt6 w-100-ns bg-grey-4 ma0" style="background:linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.1)),url({{ .Params.image }});background-size:cover">
 		<a href="{{ .Permalink }}" class="no-underline pa3 mb2 db raise w-100">
 			<div class="mw7 relative mb1">
 			<h1 class="f2 f2-l b di lh-title mb3 white mw6">{{ .Title }}</h1>
 		</div>
 		<div class="mw7 relative pb2">
-			<p class="b f4 di lh-title  white mw6">{{ .Description }}</p>
+			<p class="b f4 di lh-title  white mw6">{{ .Params.description }}</p>
 		</div>
 		<a/>
 	</div>
