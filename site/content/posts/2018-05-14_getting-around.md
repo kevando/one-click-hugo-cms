@@ -18,7 +18,7 @@ Few people know that Zharki contains the oldest know lighthouse on the island. I
 
 
 
-# Explore Nature
+## Explore Nature
 
 ![Zharki Trees](/img/trees1.png)
 
