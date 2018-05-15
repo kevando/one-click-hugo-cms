@@ -1,4 +1,0 @@
----
-title: Tourism
-name: tourism
----

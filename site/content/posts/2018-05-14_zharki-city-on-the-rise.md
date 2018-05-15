@@ -7,6 +7,7 @@ category: local
 tags:
   - local
   - news
+
 sort_order: 5
 ---
 Zharki continues to ween itself off Mylta Power, revealing new opportunities. Newly installed wind turbines can provide 90% of the city's power.
