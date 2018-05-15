@@ -7,6 +7,7 @@ category: local
 tags:
   - local
   - tourism
+  - kevin
 sort_order: 1
 ---
 ## We wake up every day and face the same questions.
@@ -18,7 +19,7 @@ sort_order: 1
 * Am I really good enough?
 * Do we drop hot or take it slow?
 
-Regarding the last question, most people drop hot. 
+Regarding the last question, most people drop hot.
 
 ![Drop Heatmap](/img/heatmap.png)
 

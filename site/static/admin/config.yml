@@ -48,7 +48,7 @@ collections: # A list of collections the CMS should be able to edit
     label: "Tags"
     folder: "site/content/tags"
     create: true
-    slug: "tag_{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"} # required?
       - {label: "Name", name: "name", widget: "string"}
@@ -57,6 +57,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "imageUrl", widget: "image", required: false}
       # - {label: "Bio", name: "bio", widget: "markdown"}
       # - {label: "Notes", name: "notes", widget: "text"}
+
+
+
 
   # -------------------------------------------------------------------------
   #   Pages
