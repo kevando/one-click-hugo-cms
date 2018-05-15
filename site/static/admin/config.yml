@@ -42,6 +42,25 @@ collections: # A list of collections the CMS should be able to edit
 
 
   # -------------------------------------------------------------------------
+  #   Tags
+  # -------------------------------------------------------------------------
+  - name: "Tags"
+    label: "Tags"
+    folder: "site/content/tags"
+    create: true
+    slug: "tag_{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"} # required?
+      - {label: "Name", name: "name", widget: "string"}
+      # - {label: "Publish Date", name: "date", widget: "datetime"}
+      # - {label: "Username", name: "username", widget: "string"}
+      - {label: "Image", name: "imageUrl", widget: "image", required: false}
+      # - {label: "Bio", name: "bio", widget: "markdown"}
+      # - {label: "Notes", name: "notes", widget: "text"}
+
+  # -------------------------------------------------------------------------
+  #   Pages
+  # -------------------------------------------------------------------------
   - name: "pages"
     label: "Pages"
     files:
@@ -51,6 +70,19 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
 
+      # -------------------
+      #   Tagged
+      # -------------------
+      # - file: "site/content/tagz/_index.md"
+      #   label: "Tags"
+      #   name: "tags"
+      #   slug: "tagged"
+      #   fields:
+      #     - {label: Title, name: title, widget: string}
+
+      # -------------------
+      #   Contact
+      # -------------------
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
@@ -77,7 +109,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
 
-          # allows you to reference items from another collection
+          # allows you to reference it  ems from another collection
           - label: "Featured Streamer"
             name: "featuredstreamer"
             required: false

@@ -4,6 +4,9 @@ date: 2018-05-14T06:38:01.013Z
 description: 'Everyone who visits Zharki, has the same questions'
 image: /img/zharki_map.png
 category: local
+tags:
+  - local
+  - tourism
 sort_order: 2
 ---
 With all that Zharki offers, it can feel overwhelming where to go. Here's a guide of the best things to do when visiting Zharki.
