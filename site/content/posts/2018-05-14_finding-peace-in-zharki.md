@@ -4,6 +4,9 @@ date: 2018-05-14T06:45:25.738Z
 description: From our corner of the world to yours
 image: /img/zharki_car.png
 category: local
+tags:
+  - local
+  - tourism
 sort_order: 1
 ---
 ## We wake up every day and face the same questions.
