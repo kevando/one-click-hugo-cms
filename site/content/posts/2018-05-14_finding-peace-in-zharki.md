@@ -6,8 +6,7 @@ image: /img/zharki_car.png
 category: local
 tags:
   - local
-  - tourism
-  - kevin
+  - enjoyment
 sort_order: 1
 ---
 ## We wake up every day and face the same questions.

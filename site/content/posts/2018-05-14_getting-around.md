@@ -1,5 +1,5 @@
 ---
-title: Getting Around
+title: Getting Around Town
 date: 2018-05-14T06:38:01.013Z
 description: 'Everyone who visits Zharki, has the same questions'
 image: /img/zharki_map.png

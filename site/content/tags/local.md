@@ -1,5 +1,4 @@
 ---
 title: Local
-name: name
+name: local
 ---
-

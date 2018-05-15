@@ -67,6 +67,9 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
     files:
+      # -------------------
+      #   Home
+      # -------------------
       - file: "site/content/_index.md"
         label: "Home Page"
         name: "home"
@@ -74,14 +77,15 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Title, name: title, widget: string}
 
       # -------------------
-      #   Tagged
+      #   Tags
       # -------------------
-      # - file: "site/content/tagz/_index.md"
+      # - file: "site/content/tags/_index.md"
       #   label: "Tags"
       #   name: "tags"
-      #   slug: "tagged"
+      #   # slug: "tagged"
       #   fields:
       #     - {label: Title, name: title, widget: string}
+      #     # - {label: Title, name: title, widget: string}
 
       # -------------------
       #   Contact
