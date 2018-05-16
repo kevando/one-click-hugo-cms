@@ -4,6 +4,10 @@ backend:
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
+# Applies only to posts collection
+permalinks:
+  post: /:year/:month/:title/
+
 collections: # A list of collections the CMS should be able to edit
 
   # -------------------------------------------------------------------------
@@ -42,21 +46,16 @@ collections: # A list of collections the CMS should be able to edit
 
 
   # -------------------------------------------------------------------------
-  #   Tags
+  #   Boot
   # -------------------------------------------------------------------------
-  # - name: "Tags"
-  #   label: "Tags"
-  #   folder: "site/content/tags"
-  #   create: true
-  #   slug: "{{slug}}"
-  #   fields:
-  #     - {label: "Title", name: "title", widget: "string"} # required?
-  #     - {label: "Name", name: "name", widget: "string"}
-  #     # - {label: "Publish Date", name: "date", widget: "datetime"}
-  #     # - {label: "Username", name: "username", widget: "string"}
-  #     - {label: "Image", name: "imageUrl", widget: "image", required: false}
-  #     # - {label: "Bio", name: "bio", widget: "markdown"}
-  #     # - {label: "Notes", name: "notes", widget: "text"}
+  - name: "boot"
+    label: "Booot"
+    folder: "site/content/boot"
+    create: true
+    # slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"} # required?
+      - {label: "Name", name: "name", widget: "string"}
 
 
 
@@ -76,16 +75,6 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
 
-      # -------------------
-      #   Tags
-      # -------------------
-      # - file: "site/content/tags/_index.md"
-      #   label: "Tags"
-      #   name: "tags"
-      #   # slug: "tagged"
-      #   fields:
-      #     - {label: Title, name: title, widget: string}
-      #     # - {label: Title, name: title, widget: string}
 
       # -------------------
       #   Contact
