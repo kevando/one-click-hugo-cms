@@ -1,12 +1,9 @@
-
-	<div class="ph1-ns w-100-ns flex"  style="background:linear-gradient(0deg,rgba(0,0,0,0.0),rgba(0,0,0,0)),url({{ .Params.image }});background-size:cover">
-		<a href="{{ .Permalink }}" class="no-underline pa3 mb2 db raise w-100  pt6">
-
-			<div class="mw7 relative bg-fix-primary">
-        <p class="b f4 di lh-title mb3 white mw6 bg-primary">
-          {{ .Title }}
-        </p>
-      </div>
-
-		<a/>
-	</div>
+<div class="w-100 flex mr1"  style="background:linear-gradient(0deg,rgba(0,0,0,0.0),rgba(0,0,0,0)),url({{ .Params.image }});background-size:cover">
+	<a href="{{ .Permalink }}" class="no-underline pa3 mb2 db raise w-100 pt6">
+		<div class="mw7 relative bg-fix-primary">
+      <p class="b f4 di lh-title mb3 white mw6 bg-primary">
+        {{ .Title }}
+      </p>
+    </div>
+	</a>
+</div>

@@ -5,10 +5,10 @@
 	<div class="mw7 center flex">
 
 		<!-- LEFT COLUMN -->
-		<div class="ph0 pv0 w-70-ns ma0" style="background-color: yellow">
+		<div class="w-100 ml1" style="background-color: white">
 
 			<!-- TOP STORY -->
-			<div class="ph0 pv0 w-100-ns flex" style="background-color: orange">
+			<div class="mb1 w-100-ns flex" style="background-color: white">
 				{{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Params.sort_order" "asc") }}
 					{{ if eq $index 0 }}
 						{{ .Render  "li-1" }}
@@ -17,7 +17,7 @@
 			</div>
 
 			<!-- 2 STORIES -->
-			<div class="ph0 pv0 w-100-ns flex" style="background-color: purple">
+			<div class="mb1 w-100-ns flex" style="background-color: white">
         {{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Params.sort_order" "asc") }}
           {{ if eq $index 1 }}
             {{ .Render  "li-2" }}
@@ -29,13 +29,13 @@
 			</div>
 
 			<!-- BANNER STORY -->
-			<div class="ph0-ns w-100-ns flex" style="background-color: orange">
+			<div class="w-100-ns flex" style="background-color: white">
         {{ partial "ad-banner" . }}
 			</div>
 		</div>
 
 		<!-- RIGHT COLUMN -->
-		<div class="ph0 pv0 w-30 ma0" style="background-color: blue">
+		<div class="dn db-ns mr1" style="background-color: white">
 			{{ partial "ad-vertical" . }}
 		</div>
 
