@@ -4,31 +4,42 @@ backend:
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
-# Applies only to posts collection
-# not working...
-permalinks:
-  post: /:year/:month/:title/
+# SEO Stuff
+enableRobotsTXT: true
+canonifyURLs: true
 
 collections: # A list of collections the CMS should be able to edit
 
-    # -------------------------------------------------------------------------
-    #   Posts
-    # -------------------------------------------------------------------------
+  # -------------------------------------------------------------------------
+  #   Posts
+  # -------------------------------------------------------------------------
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Posts" # Used in the UI, ie.: "New Post"
     folder: "site/content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Intro Blurb", name: "description", widget: "text"}
       - {label: "Image", name: "image", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Category", name: "category", widget: "string", required: false}
-      - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Sort Order", name: "sort_order", widget: "number", default: 999, valueType: "int"}
 
+  # -------------------------------------------------------------------------
+  #   Guides
+  # -------------------------------------------------------------------------
+  - name: "guides"
+    label: "Guides"
+    folder: "site/content/posts"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Intro Blurb", name: "description", widget: "text"}
+      - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Sort Order", name: "sort_order", widget: "number", default: 999, valueType: "int"}
+      - {label: "Tags", name: "tags", widget: "list"}
 
   # -------------------------------------------------------------------------
   #   Streamer
@@ -50,15 +61,15 @@ collections: # A list of collections the CMS should be able to edit
   # -------------------------------------------------------------------------
   #   Tag
   # -------------------------------------------------------------------------
-  - name: "tag"
-    label: "Tags"
-    folder: "site/content/tag"
-    create: true
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Sub Title", name: "sub_title", widget: "string", required: false}
-      - {label: "Image", name: "imageUrl", widget: "image", required: false}
+  # - name: "tag"
+  #   label: "Tags"
+  #   folder: "site/content/tag"
+  #   create: true
+  #   fields:
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Name", name: "name", widget: "string"}
+  #     - {label: "Sub Title", name: "sub_title", widget: "string", required: false}
+  #     - {label: "Image", name: "imageUrl", widget: "image", required: false}
 
   # -------------------------------------------------------------------------
   #   Pages

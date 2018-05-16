@@ -1,6 +1,7 @@
 ---
 title: Zharki News
 subtitle: From our corner of the world to yours
+description: ZNN is the most trusted news source for PUBG Zharki information
 image: /img/zharky-image.jpg
 blurb:
   heading: What is ZNN?

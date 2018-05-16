@@ -1,5 +1,6 @@
 <head>
 
+	{{ partial "seo_schema" . }}
 	<title>{{ .Title }} | ZNN</title>
 	<link rel="stylesheet" href="/css/main.css" />
 
@@ -23,10 +24,17 @@
   <meta name="author" content="Kevando">
 
 	<!-- Open Graph -->
-	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="ZNN | Zharki News">
-	<meta property="og:url" content="/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="{{ if .Params.title }}{{ .Params.title }}{{ else }}ZNN | Zharki News{{ end }}">
+	<meta property="og:url" content="{{ .Permalink }}">
 	<meta property="og:image" content="/img/og-image-real.jpg">
+
+	<!-- Twitter Cards -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@zarki_news" />
+	<meta name="twitter:title" content="{{ if .Params.title }}{{ .Params.title }}{{ else }}Hottest Zharki News{{ end }}" />
+	<meta name="twitter:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}Zharki News Network{{ end }}" />
+	<meta name="twitter:image" content="{{ if .Params.imageUrl }}{{ .Params.imageUrl }}{{ else }}/img/og-image-real.jpg{{ end }}" />
 
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 

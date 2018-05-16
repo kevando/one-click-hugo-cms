@@ -1,4 +1,0 @@
----
-title: Enjoyment
-name: enjoyment
----
