@@ -5,6 +5,7 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 # Applies only to posts collection
+# not working...
 permalinks:
   post: /:year/:month/:title/
 
@@ -44,21 +45,18 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Bio", name: "bio", widget: "markdown"}
       - {label: "Notes", name: "notes", widget: "text"}
 
-
   # -------------------------------------------------------------------------
-  #   Boot
+  #   Tag
   # -------------------------------------------------------------------------
-  - name: "boot"
-    label: "Booot"
-    folder: "site/content/boot"
+  - name: "tag"
+    label: "Tags"
+    folder: "site/content/tag"
     create: true
-    # slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"} # required?
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
-
-
-
+      - {label: "Sub Title", name: "sub_title", widget: "string"}
+      - {label: "Image", name: "imageUrl", widget: "image", required: false}
 
   # -------------------------------------------------------------------------
   #   Pages

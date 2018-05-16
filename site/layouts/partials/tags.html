@@ -1,7 +1,5 @@
-
-
-		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
-			{{ range .Params.tags }}
-					<p><a href="/tags/{{.}}">#{{ . }}</a>&nbsp;</p>
-			{{ end }}
-		</div>
+<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
+	{{ range .Params.tags }}
+			<p><a href="/tag/{{.}}">#{{ . }}</a>&nbsp;</p>
+	{{ end }}
+</div>

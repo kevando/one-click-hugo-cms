@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+  {{ partial "jumbotron" (dict "imageUrl" .Params.imageUrl "title" .Params.title "subtitle" .Params.sub_title) }}
+  {{ .Content }}
+
+  {{ $tagName := .Params.name}}
+
+  <ul class="flex-ns flex-wrap mhn1-ns pa3">
+      {{ range .Site.Pages }}
+      <!-- for some reason "in" op on ^ where clause not working -->
+            {{ if in .Params.tags  $tagName  }}
+              {{ partial "li-post" .}}
+             {{ end }}
+      {{ end }}
+  </ul>
+
+{{ end }}
