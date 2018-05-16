@@ -1,72 +1,46 @@
 {{ define "main" }}
 
+<div class="bg-off-whitee pv4">
 
-<div class="bg-off-white pv4">
-	<div class="ph0 mw7 center">
-		<div class="w-100 mhn1-ns flex-ns mb0 bg-grey-1">
+	<div class="mw7 center flex">
 
-				<div class="ph0-ns w-75-ns bg-grey-2 ma0">
+		<!-- LEFT COLUMN -->
+		<div class="ph0 pv0 w-70-ns ma0" style="background-color: yellow">
 
-								{{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Title" "asc") }}
-									{{ if eq $index 0 }}
-										{{ .Render  "li-1" }}
-									{{ end }}
-                {{ end }}
+			<!-- TOP STORY -->
+			<div class="ph0 pv0 w-100-ns flex" style="background-color: orange">
+				{{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Params.sort_order" "asc") }}
+					{{ if eq $index 0 }}
+						{{ .Render  "li-1" }}
+					{{ end }}
+        {{ end }}
+			</div>
 
-					<div class="ph0-ns w-100-ns flex bg-grey-2 mt2">
+			<!-- 2 STORIES -->
+			<div class="ph0 pv0 w-100-ns flex" style="background-color: purple">
+        {{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Params.sort_order" "asc") }}
+          {{ if eq $index 1 }}
+            {{ .Render  "li-2" }}
+          {{ end }}
+          {{ if eq $index 2 }}
+            {{ .Render  "li-2" }}
+          {{ end }}
+        {{ end }}
+			</div>
 
-
-            {{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Title" "asc") }}
-              {{ if eq $index 1 }}
-                {{ .Render  "li-2" }}
-              {{ end }}
-              {{ if eq $index 2 }}
-                {{ .Render  "li-2" }}
-              {{ end }}
-            {{ end }}
-
-					</div>
-
-					<div class="ph0-ns w-100-ns flex bg-grey-2 mt2">
-
-            {{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Title" "asc") }}
-              {{ if eq $index 0 }}
-                {{ .Render  "li-3" }}
-              {{ end }}
-            {{ end }}
-
-
-
-
-					</div>
-
-				</div>
-
-				<div class="ph0-ns w-25-ns ma0">
-
-					<div class="ph1-ns pv7 w-100-ns flex bg-primary mh2" style="background:url(https://i.imgur.com/uHWOTBU.png) no-repeat;background-size:contain"></div>
-
-				</div>
-
+			<!-- BANNER STORY -->
+			<div class="ph0-ns w-100-ns flex" style="background-color: orange">
+        {{ partial "ad-banner" . }}
+			</div>
 		</div>
 
-
-
-
-
-
+		<!-- RIGHT COLUMN -->
+		<div class="ph0 pv0 w-30 ma0" style="background-color: blue">
+			{{ partial "ad-vertical" . }}
+		</div>
 
 	</div>
+
 </div>
-
-
-
-
-
-
-
-<!-- {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }} -->
-
-
 
 {{ end }}
