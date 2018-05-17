@@ -3,7 +3,7 @@ title: Things to do in Zharki
 date: 2018-05-16T23:44:04.091Z
 description: Way more enjoyable than a day in Pochinki
 image: /img/fishing1.png
-sort_order: 999
+sort_order: 9
 tags:
   - local
   - enjoyment

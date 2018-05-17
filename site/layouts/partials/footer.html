@@ -7,22 +7,32 @@
 			<div>
 				<h3 class="f4 b lh-title mb1 primary">Zharki News</h3>
 				<ul class="mb3">
-					<li><a href="/news" class="link">News</a></li>
+					<li><a href="/tags/local" class="link">Local</a></li>
+					<li><a href="/tags/xbox" class="link">xBox</a></li>
 				</ul>
 			</div>
 
 			<div>
 				<h3 class="f4 b lh-title mb1 primary">Find out more</h3>
 				<ul class="mb3">
-					<li><a href="/news" class="link">Latest News</a></li>
+					<li><a href="/tags/tutorial" class="link">Tutorials</a></li>
+					<li><a href="/tags/tourism" class="link">Tourism</a></li>
 				</ul>
 			</div>
 
+			<div>
+				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
+				<ul class="mhn2">
+					{{ partial "social-icon" (dict "link" "https://twitter.com/zharki_news" "svg" "icons-twitter") }}
+				</ul>
+			</div>
 
 		</div>
 	</div>
 
 </footer>
+
+{{ partial "svg" . }}
 
 <script src="/app.js"></script>
 

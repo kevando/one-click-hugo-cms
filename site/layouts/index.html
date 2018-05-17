@@ -5,37 +5,39 @@
 	<div class="mw7 center flex">
 
 		<!-- LEFT COLUMN -->
-		<div class="w-100 ml1" style="background-color: white">
+		<div class="w-100" style="background-color: white">
 
-			<!-- TOP STORY -->
-			<div class="mb1 w-100-ns flex" style="background-color: white">
-				{{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Params.sort_order" "asc") }}
-					{{ if eq $index 0 }}
-						{{ .Render  "li-1" }}
-					{{ end }}
-        {{ end }}
+			<div class="mw7 center">
+			  <ul class="flex-ns flex-wrap">
+			      {{ range $index, $element := (sort (where .Data.Pages ".Params.sort_order" "lt" 10) ".Params.sort_order" "asc") }}
+
+							{{ if eq $index 0 }}
+								{{ .Render  "li-1" }}
+							{{ end }}
+
+							{{ if eq $index 1 }}
+								{{ .Render  "li-2" }}
+							{{ end }}
+
+							{{ if eq $index 2 }}
+								{{ .Render  "li-2" }}
+								{{ partial "ad-banner" . }}
+							{{ end }}
+
+							{{ if eq $index 3 }}
+								{{ .Render  "li-1" }}
+							{{ end }}
+
+
+			      {{ end }}
+			  </ul>
+
 			</div>
 
-			<!-- 2 STORIES -->
-			<div class="mb1 w-100-ns flex" style="background-color: white">
-        {{ range $index, $element := (sort (where .Data.Pages "Type" "posts") ".Params.sort_order" "asc") }}
-          {{ if eq $index 1 }}
-            {{ .Render  "li-2" }}
-          {{ end }}
-          {{ if eq $index 2 }}
-            {{ .Render  "li-2" }}
-          {{ end }}
-        {{ end }}
-			</div>
-
-			<!-- BANNER STORY -->
-			<div class="w-100-ns flex" style="background-color: white">
-        {{ partial "ad-banner" . }}
-			</div>
 		</div>
 
 		<!-- RIGHT COLUMN -->
-		<div class="dn db-ns mr1" style="background-color: white">
+		<div class="dn db-ns ba bw2 b--white" style="background-color: white">
 			{{ partial "ad-vertical" . }}
 		</div>
 
