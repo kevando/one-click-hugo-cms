@@ -27,14 +27,14 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="{{ if .Params.title }}{{ .Params.title }}{{ else }}ZNN | Zharki News{{ end }}">
 	<meta property="og:url" content="{{ .Permalink }}">
-	<meta property="og:image" content="/img/og-image-real.jpg">
+	<meta property="og:image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.BaseURL }}img/zharki_car.png{{ end }}">
 
 	<!-- Twitter Cards -->
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@zarki_news" />
+	<meta name="twitter:site" content="@zharki_news" />
 	<meta name="twitter:title" content="{{ if .Params.title }}{{ .Params.title }}{{ else }}Hottest Zharki News{{ end }}" />
 	<meta name="twitter:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}Zharki News Network{{ end }}" />
-	<meta name="twitter:image" content="{{ if .Params.imageUrl }}{{ .Params.imageUrl }}{{ else }}/img/og-image-real.jpg{{ end }}" />
+	<meta name="twitter:image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.BaseURL }}img/zharki_car.png{{ end }}" />
 
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
