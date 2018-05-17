@@ -1,3 +1,6 @@
-baseurl = "/"
+baseurl = "https://www.zharki.net/"
 languageCode = "en-us"
-title = "Homepage"
+title = "Zharki Newz"
+
+# SEO Stuff
+canonifyURLs = true
