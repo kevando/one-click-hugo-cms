@@ -1,5 +1,5 @@
-# baseurl = "https://www.zharki.net/"
-baseurl = "/"
+baseurl = "https://www.zharki.net/"
+# baseurl = "/"
 languageCode = "en-us"
 title = "Zharki Newz"
 
