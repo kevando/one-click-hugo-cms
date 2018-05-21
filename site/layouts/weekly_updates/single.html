@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+  <div class="mw6 center ph3 pv4">
+    <div class="cms mw6">
+
+      {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
+      <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+      {{ .Content }}
+    </div>
+      {{ partial "tags" . }}
+  </div>
+
+
+{{ end }}
