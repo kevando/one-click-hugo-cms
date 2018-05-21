@@ -2,7 +2,7 @@
 title: Getting Around Town
 date: 2018-05-14T06:38:01.013Z
 description: 'Everyone who visits Zharki, has the same questions'
-image: /img/zharki_map.png
+image: /img/zharki_map.jpg
 category: local
 tags:
   - local
@@ -15,7 +15,7 @@ With all that Zharki offers, it can feel overwhelming where to go. Here's a guid
 
 ## Lighthouse
 
-![Zharki Lighthouse](/img/lighthouse1.png)
+![Zharki Lighthouse](/img/lighthouse1.jpg)
 
 Few people know that Zharki contains the oldest know lighthouse on the island. It's truly a treasure.
 
@@ -23,7 +23,7 @@ Few people know that Zharki contains the oldest know lighthouse on the island. I
 
 ## Explore Nature
 
-![Zharki Trees](/img/trees1.png)
+![Zharki Trees](/img/trees1.jpg)
 
 Zharki has 4 types of tree, and they're laid out in some of the most amazing patterns.
 

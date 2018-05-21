@@ -1,7 +1,7 @@
 <head>
 
 	{{ partial "seo_schema" . }}
-	<title>{{ .Site.Title }} :: {{ .Title }} | ZNN</title>
+	<title>{{ .Title }} | {{ .Site.Title }}</title>
 	<link rel="stylesheet" href="/css/main.css" />
 
 	<meta charset="utf-8">
@@ -27,14 +27,14 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="{{ if .Params.title }}{{ .Params.title }}{{ else }}ZNN | Zharki News{{ end }}">
 	<meta property="og:url" content="{{ .Permalink }}">
-	<meta property="og:image" content="{{ if .Params.image }}https://www.zharki.net{{ .Params.image }}{{ else }}{{ .Site.BaseURL }}img/zharki_car.png{{ end }}">
+	<meta property="og:image" content="{{ if .Params.image }}https://www.zharki.net{{ .Params.image }}{{ else }}{{ .Site.BaseURL }}img/zharki_car.jpg{{ end }}">
 
 	<!-- Twitter Cards -->
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@zharki_news" />
 	<meta name="twitter:title" content="{{ if .Params.title }}{{ .Params.title }}{{ else }}Hottest Zharki News{{ end }}" />
 	<meta name="twitter:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}Zharki News Network{{ end }}" />
-	<meta name="twitter:image" content="{{ if .Params.image }}https://www.zharki.net{{ .Params.image }}{{ else }}{{ .Site.BaseURL }}img/zharki_car.png{{ end }}" />
+	<meta name="twitter:image" content="{{ if .Params.image }}https://www.zharki.net{{ .Params.image }}{{ else }}{{ .Site.BaseURL }}img/zharki_car.jpg{{ end }}" />
 
 	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 

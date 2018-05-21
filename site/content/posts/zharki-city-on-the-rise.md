@@ -2,7 +2,7 @@
 title: 'Zharki: City on the Rise'
 date: 2018-05-14T06:43:09.311Z
 description: Looking ahead to the future
-image: /img/zharki_windmills.png
+image: /img/zharki_windmills.jpg
 category: local
 tags:
   - local

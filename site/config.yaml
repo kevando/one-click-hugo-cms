@@ -1,7 +1,12 @@
+
+# ------------------------------------------
+#   PROD
+# ------------------------------------------
+
 baseurl: "https://www.zharki.net/"
 
 languageCode: "en-us"
-title: "YAML PROD"
+title: "ZNN"
 
 # SEO Stuff
 canonifyURLs: true

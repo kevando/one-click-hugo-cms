@@ -1,6 +1,6 @@
 ---
 title: Streamers
-image: /img/zharky-image.jpg
+image: /img/zharki_windmills.jpg
 featuredstreamer: 'shroud'
 description: asdf
 ---

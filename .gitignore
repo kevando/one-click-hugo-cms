@@ -2,3 +2,7 @@ node_modules/
 dist/
 /npm-debug.log
 yarn-error.log
+
+
+# Local dev config file
+site/config.toml

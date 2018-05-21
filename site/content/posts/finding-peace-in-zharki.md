@@ -2,7 +2,7 @@
 title: Finding Peace in Zharki
 date: 2018-05-14T06:45:25.738Z
 description: From our corner of the world to yours
-image: /img/zharki_car.png
+image: /img/zharki_car.jpg
 category: local
 tags:
   - local
@@ -21,7 +21,7 @@ sort_order: 1
 
 Regarding the last question, most people drop hot.
 
-![Drop Heatmap](/img/heatmap.png)
+![Drop Heatmap](/img/heatmap.jpg)
 
 
 
