@@ -1,0 +1,7 @@
+baseurl: "https://www.zharki.net/"
+
+languageCode: "en-us"
+title: "YAML PROD"
+
+# SEO Stuff
+canonifyURLs: true
