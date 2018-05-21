@@ -1,7 +1,7 @@
 ---
-title: First Update
-date: 2018-05-16T23:53:18.701Z
-description: 'Weekly Update'
+title: PUBG News
+date: 2018-05-21T23:53:18.701Z
+description: ''
 image: /img/weekly_update_1.jpg
 sort_order: 999
 tags:
@@ -22,15 +22,9 @@ tags:
 
 
 
-# eSports
+# eSportss
 
-![pubg esports may20-may27](https://i.imgur.com/BKBuuTk.png "esports")
+*Past*
+Auzom hosted a British Iles open on Sunday. May 2018 Curse Trials Qualifiers start Wednesday.
 
 ongoing
-
-# Memes
-
-Best meme I found today
-
-As a reminder, /how-to-play-pubg
-send to hoff, ask for feedback

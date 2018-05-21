@@ -10,3 +10,7 @@ title: "ZNN"
 
 # SEO Stuff
 canonifyURLs: true
+
+# Custom URLs
+permalinks:
+  weekly_updates: "/weekly_updates/:year/:month/:title/"
