@@ -21,7 +21,7 @@
 
 							{{ if eq $index 2 }}
 								{{ .Render  "li-2" }}
-								{{ partial "ad-banner" . }}
+								{{ partial "homepage/ad-banner" . }}
 							{{ end }}
 
 							{{ if eq $index 3 }}
@@ -38,7 +38,7 @@
 
 		<!-- RIGHT COLUMN -->
 		<div class="dn db-ns ba bw2 b--white" style="background-color: white">
-			{{ partial "ad-vertical" . }}
+			{{ partial "homepage/twitter-feed" . }}
 		</div>
 
 	</div>
