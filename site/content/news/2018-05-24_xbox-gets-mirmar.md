@@ -1,7 +1,7 @@
 ---
 title: xBox Gets Mirmar
-date: 2018-05-24T00:28:44-04:00
-description: 'The desert comes to xbox.'
+date: 2018-05-24T04:28:44.000Z
+description: The desert comes to xbox.
 tags:
   - xbox
   - mirmar
@@ -11,3 +11,5 @@ sort_order: 999
 
 Lots of new stuff, but one cool change is that buildings can be seen while very
 high in the air.
+
+![PUBG Renders buildings from sky](/img/buildings_sky.jpg)
