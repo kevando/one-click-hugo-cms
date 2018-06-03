@@ -14,3 +14,4 @@ canonifyURLs: true
 # Custom URLs
 permalinks:
   weekly_updates: "/weekly_updates/:year/:month/:title/"
+  stories: "/stories/:year/:month/:title/"
