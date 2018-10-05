@@ -1,8 +1,12 @@
-#   PROD
 
+# PROD
 baseurl: "https://www.zharki.net/"
+
+# DEV
+# baseurl: "http://localhost:3000/"
+
 languageCode: "en-us"
-title: "ZNN"
+title: "Zharki News"
 # SEO Stuff
 canonifyURLs: true
 # Custom URLs
