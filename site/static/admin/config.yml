@@ -69,6 +69,21 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Tags", name: "tags", widget: "list"}
 
   # -------------------------------------------------------------------------
+  #   Videos (added oct 4, 2018)
+  # -------------------------------------------------------------------------
+  - name: "videos"
+    label: PUBG "Videos"
+    folder: "site/content/videos"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Youtube Video ID", name: "youtube_id", widget: "text", required: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list"}
+
+  # -------------------------------------------------------------------------
   #   Streamer
   # -------------------------------------------------------------------------
   - name: "streamer"
